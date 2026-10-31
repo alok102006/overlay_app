@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f1115">
+<title>VideoGate</title>
+<style>
+  :root { --bg:#0f1115; --card:#181b22; --text:#eef0f4; --muted:#9aa3b2; --accent:#6c8cff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.5; }
+  main { max-width:560px; margin:0 auto; padding:32px 16px 48px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  p.lead { color:var(--muted); margin:0 0 24px; }
+  .btn { display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none;
+         font-weight:600; padding:16px; border-radius:12px; font-size:1.05rem; }
+  .card { background:var(--card); border-radius:14px; padding:18px 18px 8px; margin-top:20px; }
+  h2 { font-size:1.05rem; margin:0 0 10px; }
+  ol { padding-left:20px; margin:0 0 12px; }
+  li { margin-bottom:8px; }
+  .note { color:var(--muted); font-size:.9rem; margin-top:24px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>VideoGate</h1>
+  <p class="lead">Pick your apps and a video. The video plays first, and the app opens only after it ends.</p>
+
+  <a class="btn" href="https://github.com/alok102006/overlay_app/releases/latest/download/VideoGate.apk">Download for Android (APK)</a>
+
+  <section class="card">
+    <h2>Install</h2>
+    <ol>
+      <li>Open the downloaded file. If asked, allow installing from this browser.</li>
+      <li>Open VideoGate, tap <b>Choose video</b> and pick your video.</li>
+      <li>Tap <b>Choose apps</b> and select the apps that should play it first.</li>
+      <li>Tap <b>Turn on accessibility service</b>, find VideoGate and switch it on.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>If the accessibility switch is greyed out</h2>
+    <ol>
+      <li>Long-press the VideoGate icon, then App info.</li>
+      <li>Tap the three-dot menu and choose <b>Allow restricted settings</b>.</li>
+      <li>Go back and turn the service on.</li>
+    </ol>
+  </section>
+
+  <p class="note">Android only. VideoGate uses the accessibility service just to know which app is opening. It does not read your screen, and your video never leaves your phone.</p>
+</main>
+</body>
+</html>
